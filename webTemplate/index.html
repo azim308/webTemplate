@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIE Ahmedabad Newsletter Maker</title>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+    class="bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200 flex flex-col items-center justify-center min-h-screen">
+    <!-- Main Container -->
+    <div class="bg-white shadow-2xl rounded-lg p-8 max-w-lg w-full">
+        <!-- Title -->
+        <h1 class="text-3xl font-extrabold text-gray-700 text-center mb-6">
+            TIE Ahmedabad Newsletter Maker
+        </h1>
+
+        <!-- Upload Section -->
+        <div class="space-y-4">
+            <label for="imageInput" class="block text-sm font-medium text-gray-600">
+                Upload an Image:
+            </label>
+            <input type="file" id="imageInput" accept="image/*"
+                class="block w-full text-gray-700 border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+        </div>
+
+        <!-- Preview Section -->
+        <div id="imagePreview"
+            class="flex justify-center items-center border border-dashed border-gray-400 rounded-md p-6 min-h-[250px] bg-gray-50 mt-6">
+            <p class="text-gray-500">No image uploaded</p>
+        </div>
+
+        <!-- Download Button -->
+        <button id="downloadButton"
+            class="bg-green-600 text-white px-6 py-3 rounded-md shadow-md mt-6 w-full font-semibold hover:bg-green-700 disabled:bg-gray-400 disabled:cursor-not-allowed"
+            disabled>
+            Download HTML
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-10 text-sm text-gray-500">
+        &copy; 2024 TIE Ahmedabad. All rights reserved.
+    </footer>
+</body>
+
+</html>
